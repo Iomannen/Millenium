@@ -1,0 +1,279 @@
+* {
+ margin: 0;
+ padding: 0;
+ list-style-type: none;
+
+}
+button {
+  padding: 0;
+   border: none;
+   font: inherit;
+   color: inherit;
+   background-color: transparent;
+   cursor: pointer;
+ }
+/* Сверху сброс стилей*/
+
+.menu__page, .menu__contacts {
+  display: none;
+ }
+/* Отключаем ненужные блоки в мобильной версии */
+.fiolet {
+ color: rgb(107, 90, 249);
+}
+.darkfiolet {
+color: rgb(42, 35, 103);
+}
+/* Классы для цветного текста */
+body {
+  font-family: "Montserrat" ;
+  display: grid;
+  gap: 21px;
+}
+/* Задаем параметры общие для всего документа */
+ header {
+  padding: 10px;
+  padding-top: 14px;
+  padding-bottom: 0;
+}
+ 
+/* Тут мы задали паддинги для хедера */
+.call-button {
+  background-image: url(images/button_full.svg);
+  width: 52px;
+  height: 32.5px;
+  }
+  .menu__sidemenu-button {
+    background-image: url(images/3_lined_menu.svg);
+    width: 41px;
+    height: 20px;
+  }
+  /* Параметры кнопки и меню */
+  .menu {
+    
+    display: flex;
+    justify-content: space-between;
+    
+   }
+   /* Позиционирование всего меню */
+   .menu__side-menu {
+    display: flex;
+    align-self: center;
+    width: 41px;
+    height: 20px;
+   }
+   /* Вертикальное позиционирование сайд меню*/
+ .menu__milenium-logo {
+  display: flex;
+  align-self: center;
+  width:113.21px;
+  height: 35.06px;
+  }
+  .menu__call-button {
+    display: flex;
+    align-self: center;
+  }
+/* Размеры и позиционирование миллениум лого */
+
+
+/* Тут начало блока мейн */
+.content {
+ display: grid;
+ grid-template-rows: 318px 95px 69px 97px;
+ max-width:max-content;
+ margin: 0 auto;
+ padding-left: 10px;
+ padding-right: auto;
+}
+/* Тут начало блока мейн */
+/* Задаем вертикальные отступы между блоками */
+.content__header {
+font-size: 18px;
+font-weight: 700;
+}
+/* Параметры текста заголовка контента */
+.content__first-promotion {
+  font-size: 12px;
+  font-weight: 400;
+  text-align: left ;
+}
+/* Параметры текста первого блока продвижения*/
+.content__first-promotion > .fiolet {
+  font-weight: 700;
+}
+/* Вложение нужно для выделения текста не только цветом но и весом шрифта */
+.content__price-button {
+display: flex;
+justify-content: center;
+}
+/* Горизонтальное выравнивание*/
+.content__price {
+background-image: url(images/price_button.svg);
+width: 275px;
+height: 60px;
+}
+/* Нужный вид кнопки */
+.content__second-promotion {
+font-size: 12px;
+font-weight: 500;
+text-align: center;
+}
+/* Параметры текста второго блока продвижения*/
+
+.content__image {
+width: auto;
+max-width: 480px;
+min-width: 340px;
+position: absolute;
+}
+/* Позиционирование картинотьки !!! */
+/* Все дальше min-width !!! */
+@media(min-width: 768px) {
+
+  header {
+    padding-right: 32px;
+    padding-left: 41px;
+    padding-top: 22px;
+  }
+  /* Новые параметры хедера */
+  body {
+    gap: 56px;
+  }
+    /* Новый отступ */
+.call-button {
+  background-image: url(images/trubka-button.svg);
+  width: 62px;
+  height: 38.75px;
+  }
+.menu__milenium-logo {
+ width:177.61px;
+ height: 55px;
+}
+    /* Новые парметры элементов в шапке (сайд меню с теми же размерам) */
+.content {
+  display: grid;
+  grid-template-rows: 50px 75px 70px 97px;
+  max-width:max-content;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: auto;
+}
+/* Новые отступы в гриде */
+.content__header {
+  font-size: 24px;
+}
+.content__first-promotion {
+width: 356px;
+height: 45px;
+}
+.content__price-button {
+  display: flex;
+  justify-content: flex-start;
+  }
+.content__second-promotion {
+  width: 287px;
+  text-align: start;
+}
+/* Ориентация контента */
+.content__image {
+min-width: 450px;
+right: 0%;
+position: absolute;
+}
+/* Позиция картинотьки лэптоп */
+}
+
+/* Позиция десктоп */
+@media(min-width: 1280px) {
+
+  .menu__page, .menu__contacts {
+    display: block;
+   }
+/* Подключаем нужные меню на десктоп */
+   .menu__side-menu{
+  display: none;
+  }
+/* Отключаем ненужное сайд меню */
+header {
+  padding: 140px;
+  padding-top: 32px;
+  padding-bottom: 0;
+}
+/* Новые паддинги в хедере */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Вертикальное выравнивание меню */
+a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+}
+/* Нужный дизайн меню */
+.menu__contacts {
+text-align: end;
+}
+/* Выравнивание влево блока с контактами */
+.menu__working-hours {
+font-weight: 700;
+}
+.menu_phone-href {
+font-size: 24px;
+font-weight: 800;
+}
+/* Нужный стиль номера */
+.call-button {
+  background-image: url(images/big_header_button.svg);
+  width: 177px;
+  height: 60px;
+  }
+/* Большая десктопная кнопка */
+
+/* Начало десктоп мейна */
+
+body {
+  gap: 90px;
+}
+/* Десктоп гэп */
+.content {
+  display: grid;
+  grid-template-rows: 121px 156px 80px 77px;
+  max-width:max-content;
+  margin: 0;
+  padding-left: 140px;
+  padding-right: auto;
+ 
+}
+/* Десктопные вертикальные отступы */
+.content__header {
+  font-size: 36px;
+  max-width: 657px;
+}
+/* Мэйн хедер стиль */
+.content__first-promotion {
+ font-size: 16px;
+ 
+ width: 619px;
+}
+/* Мэйн первый текст стиль */
+.content__second-promotion {
+  font-size: 14px;
+  font-weight: 600;
+  min-width: 472px;
+  }
+  /* Мэйн второй текст стиль */
+  .content__image {
+    min-width: 850px;
+    top: 5%;
+    right: 0%;
+    position: absolute;
+    z-index: -1;
+    }
+ /* Картинка как то так работает в десктопе */
+}
+button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+ /* Стиль для всех кнопок */
