@@ -1,0 +1,335 @@
+* {
+ margin: 0;
+ padding: 0;
+ list-style-type: none;
+}
+
+button {
+ padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+.header-menu__menu-image:hover {
+    width: 36px;
+    }
+    body {
+    font-family: "Montserrat",  sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    display: grid;
+    }
+    header {
+    padding: 10px;
+    padding-top: 14px;
+    padding-bottom: 13px;
+    }
+    .menu__main-page, 
+    .menu__price-page, 
+    .menu__review-page, 
+    .menu__contacts-page, 
+    .menu__contacts, 
+    .menu__call-button
+    {
+    display: none;
+    }
+    .menu {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    }
+    .menu__side-menu {
+    height: 20px;
+    }
+    .menu__milenium-logo {
+    height: 35.06px;
+    }
+    .menu__logo-image {
+        
+            width: 113.21px;
+            height: 35.06px;
+    }
+    .menu__small-callbutton {
+        height: 32.5px;
+    }
+    .menu__small-button {
+    border-radius: 20%;
+    border-width: 0;
+    height: 32.5px; 
+    }
+    .header__button--phone-button--button-image:hover {
+    width: 48px;
+    }
+    
+    .content {
+    display: grid;
+    }
+    .main-text__header {
+        width: 327px;
+        height: 44px;
+        padding-left: 10px;
+        padding-right: 23px;
+        font-weight: 700;
+        color: rgb(42, 35, 103);
+    }
+    .main-text__header::after {
+        content: " на 1C-Битрикс";
+        color: rgb(107, 90, 249);
+    }
+    
+    .main-text__first-promotion {
+    
+    width: 356px;
+    height: 45px;
+    font-size: 12px;
+    padding-left: 7px;
+    padding-right: 3px;
+    padding-top:29px;
+    }
+    .main-text__first-promotion:after {
+    content: " выделит вас на фоне конкурентов";
+    color: rgb(107, 90, 249);
+    font-weight: 700;
+    padding-top:29px;
+    }
+    .main-text__price-button {
+    
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    }
+    .main-text__price-button--submit-button {
+        height: 60px;
+        border-width: 0;
+    }
+    .main-text__price-button--submit-button--image-button:hover {
+        width: 265px;
+    }
+    .main-text__second-promotion {
+    display: flex;
+    flex-direction: column;
+    margin-right:auto;
+     margin-left: auto;
+    padding-top: 9px;
+    font-size: 12px;
+    font-weight: 500;
+    width: 340px;
+    height: 97px;
+    
+    padding-bottom: 101px;
+    text-align: center;
+    color: rgb(107, 90, 249);
+    }
+    span {
+        color: rgb(42, 35, 103);
+    }
+    
+    @media (min-width: 667px) {
+        
+        .menu__main-page, 
+        .menu__price-page, 
+        .menu__review-page, 
+        .menu__contacts-page, 
+        .menu__contacts, 
+        .menu__call-button
+        {
+        display: none;
+        }   
+        header {
+            padding-top: 22px;
+            padding-bottom: 15px;
+            padding-left: 42px;
+            padding-right: 32px;
+        }
+        .header__milenium-logo {
+            width: 177.61px;
+            height: 55px;
+        }
+        .header__milenium-logo--logo-picture {
+            width: auto;
+            height: auto;
+        }
+        .menu__small-button,
+        .menu__smallbutton {
+            width: 62px;
+            height: 38.75px;
+        }
+        .content {
+            padding-top: 41px;
+            padding-left: 10px;
+        }
+        .main-text__header {
+            width: 653px;
+            height: 29px;
+            font-size: 24px;
+            font-weight: 700;
+            
+        }
+        .main-text__image {
+            position: absolute;
+            left: 40%;
+            top: 114px;
+           
+        }
+        .main-text__image--main-image {
+            width: 569px;
+            height: 378px;
+            
+        }
+        .main-text__first-promotion {
+            padding-top: 21px;
+        }
+         .main-text__price-button {
+            padding-top: 54px;
+            margin-right: auto;
+        }
+        .main-text__second-promotion {
+            width: 287px;
+        height: 97px;
+        margin: 0;
+        display: flex;
+        margin-right: auto;
+        text-align: left;
+        font-size: 12px;
+        font-weight: 600;
+        padding-top: 10px;
+        }
+     
+    }
+           
+    @media (min-width: 1280px) {
+        header {
+            padding: 140px;
+            padding-top: 32px;
+            padding-bottom: 23px;
+            }
+    .menu {
+    display: flex;
+    }
+    .menu__side-menu {
+    display: none;
+    }
+    .menu__milenium-logo:hover {
+        
+        width: 182px;
+        height: 55px;
+        }
+    .header__milenium-logo--logo-picture {
+    
+    width: auto;
+    height: auto;
+    }
+    
+    .menu__phone-number {
+    text-align: end;
+    }
+    .number:hover {
+    text-decoration: underline;
+    }
+    .menu__working-hours {
+    text-align: end;
+    font-size: 12px;
+    font-weight: 700;
+    color: rgb(42, 35, 103);
+    }
+    .header__button {
+    display: none;
+    }
+    .menu__main-page, .menu__price-page, .menu__review-page, .menu__contacts-page
+    {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(42, 35, 103);
+    }
+    
+    .bigfuckingbutton, .menu__call-button {
+        height: 60px;
+    }
+    .menu__contacts, 
+    .menu__call-button
+    {
+    display: block;
+    }
+    
+    
+    body {
+            font-family: "Montserrat",  sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            display: grid;       
+    }
+    
+    
+    .content {
+    padding-top: 60px;
+    padding-left: 140px;
+    }
+    .main-text__header {
+        width: 653px;
+        height: 88px;
+        padding-left: 10px;
+        padding-right: 23px;
+        font-weight: 700;
+        font-size: 36px;
+        color: rgb(42, 35, 103);
+    }
+    .main-text__image {
+        display: flex;
+        flex-wrap: wrap;
+    
+    
+    }
+    .main-text__image--main-image {
+       position: absolute;
+       max-width: fit-content;
+        width: 855px;
+        left: 45%;
+        top: 6%;
+        z-index: -1;
+        
+    }
+    .main-text__first-promotion {
+    width: 619px;
+    height: 40px;
+    height: 40px;
+    font-size: 16px;
+    padding-top: 33px;
+    }
+    .main-text__price-button {
+        display: flex;
+        justify-content: start;
+        padding-top: 116px;
+    
+    }
+    
+    .main-text__second-promotion {
+    width: 472px;
+    height: 77px;
+    margin: 0;
+    display: flex;
+    margin-right: auto;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 20px;
+    
+    }
+    button:hover {
+        text-decoration:underline;
+        font-size: 19px;
+     }
+    .menu__logo-button:hover {
+        box-shadow: 5px 5px 5px rgb(42, 35, 103);
+        width: 190px;
+    }
+    .menu__big-button:hover {
+     width: 170px;
+    }
+    .main-text__price-button--submit-button--image-button:hover {
+    width: 270px;
+    }
+    }
