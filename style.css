@@ -230,8 +230,13 @@ position: absolute;
       .content__second-promotion {
         width: 360px;
       }
-}
 
+.call-button:hover, .content__price:hover {
+  border-radius: 5%;
+ /* Фиксит угол у кнопок при наведении */
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+}
 /* Позиция десктоп */
 @media(min-width: 1280px) {
 
@@ -322,12 +327,10 @@ body {
     position: absolute;
     }
  /* Картинка как то так работает в десктопе */
+
 }
-.call-button:hover, .content__price:hover {
-  border-radius: 5%;
- /* Фиксит угол у кнопок при наведении */
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
+
+
  /* Стиль для всех кнопок */
  /* Для больших разрешений экрана увеличим картинку */
  @media(min-width: 1600px) {
