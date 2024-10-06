@@ -178,8 +178,8 @@ z-index: -1;
 .content {
   display: grid;
   grid-template-rows: 50px 75px 70px 97px;
-  max-width:max-content;
-  margin-left: 5%;
+  max-width: 768px;
+  margin: 0 auto;
   padding-left: 10px;
 }
 /* Новые отступы в гриде */
@@ -216,8 +216,8 @@ position: absolute;
   .content {
     display: grid;
     grid-template-rows: 50px 75px 70px 97px;
-    max-width:max-content;
-    margin-left: 10%;
+    max-width: 1040px;
+    margin: 0 auto;
     padding-left: 10px;
   }
   .content__image {
@@ -301,7 +301,7 @@ body {
   grid-template-rows: 121px 156px 80px 77px;
   max-width:1200px;
   margin: 0 auto;
-  padding-right: auto;
+  
  
 }
 /* Десктопные вертикальные отступы */
