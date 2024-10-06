@@ -212,7 +212,7 @@ position: absolute;
 Я не знаю можно ли было трогать значение grid-template-rows, что бы увеличить вертикальные отступы между блоками
 но я не стал, если что потом переделаю что бы более гармночино все выглядело   */
 
-@media(min-width: 969px) {
+@media(min-width: 1040px) {
   .content {
     display: grid;
     grid-template-rows: 50px 75px 70px 97px;
@@ -230,16 +230,18 @@ position: absolute;
       .content__second-promotion {
         width: 360px;
       }
+    }
 
-.call-button:hover, .content__price:hover {
-  border-radius: 5%;
- /* Фиксит угол у кнопок при наведении */
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-}
 /* Позиция десктоп */
 @media(min-width: 1280px) {
 
+  .call-button:hover, .content__price:hover {
+    border-radius: 6%;
+   /* Фиксит угол у кнопок при наведении */
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+  
   .menu__item, .menu__contacts {
     display: block;
    }
