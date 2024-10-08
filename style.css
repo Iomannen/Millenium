@@ -26,6 +26,10 @@ a {
  .burger-menu {
   display: none;
  }
+.sidemenu-zaglushka {
+  display: none;
+}
+/* SIDE MENU !!! выключаем */
 
  .menu__side-menu:hover .burger-menu {
   display: flex;
@@ -233,7 +237,7 @@ color: rgb(107, 90, 249);
     top: -23.54px;
    }
    /* SIDE MENU позиционирование крестика */
-   .content__sidemenu-zaglushka {
+   .menu__side-menu:hover .sidemenu-zaglushka {
     position: absolute;
     display: block;
     background-color: rgba(163, 161, 161, 0.85);
