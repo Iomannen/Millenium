@@ -26,16 +26,15 @@ a {
  .burger-menu {
   display: none;
  }
-.sidemenu-zaglushka {
-  display: none;
-}
+
 /* SIDE MENU !!! выключаем */
 
 .menu__side-menu:hover .menu__sidemenu-button  {
+
 background-image: url(images/active_header_menu.svg);
 }
 
- .menu__side-menu:hover .burger-menu {
+.burger-menu {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,7 +47,8 @@ background-image: url(images/active_header_menu.svg);
   text-align: start;
   height: 100%;
   left: 0px;
-
+  transition: 0.5s ease-in-out;
+  
  }
  .burger-menu__item0 {
   position: absolute;
@@ -65,9 +65,7 @@ font-size: 18px;
 font-weight: 700;
 color: rgb(107, 90, 249);
 }
-.burger-menu__item8 {
-  padding-top: 1053px;
-}
+
  
 .burger-menu__item8 {
   top: 225px;
@@ -78,6 +76,10 @@ color: rgb(107, 90, 249);
   top: 225px;
   padding-bottom: 42px;
 } 
+
+.menu__side-menu {
+width: 100%;
+}
 
 
  /* SIDE MENU !!! */
@@ -106,6 +108,7 @@ color: rgb(107, 90, 249);
    padding: 10px;
    padding-top: 14px;
    padding-bottom: 0;
+   width: auto;
  }
   
  /* Тут мы задали паддинги для хедера */
@@ -229,20 +232,23 @@ color: rgb(107, 90, 249);
 
 /* SIDE MENU LAPTOP */
 
-  .menu__side-menu:hover .burger-menu {
+  .burger-menu {
     gap: 28px;
     top: 97px;
     left:0px;
     width: 360px;
+    padding-top: 52px;
+  
   }
   /* SIDE MENU параметры сайдменю для лэптопа */
   .burger-menu__item0 {
     position: absolute;
     left: 321px;
-    top: -23.54px;
+    top: 0;
+    padding-top: 19.28px;
    }
    /* SIDE MENU позиционирование крестика */
-   .menu__side-menu:hover .sidemenu-zaglushka {
+   .sidemenu-contentbackground {
     position: absolute;
     display: block;
     background-color: rgba(163, 161, 161, 0.85);
@@ -253,6 +259,12 @@ color: rgb(107, 90, 249);
     z-index: 5;
    }
    /* SIDE MENU блок затемняющий экран */
+   .exit-button {
+    width: 20.87px;
+    height: 18.19px;
+   }
+
+
     /* SIDE MENU LAPTOP */
 
 
@@ -317,9 +329,17 @@ color: rgb(107, 90, 249);
  /* Позиция десктоп */
  @media(min-width: 1280px) {
 
-  .content__sidemenu-zaglushka {
+
+  .burger-menu {
     display: none;
   }
+  /* Burger menu zaglushka off */
+  .sidemenu-contentbackground {
+    display: none;
+  }
+/* Burger menu desktop off */
+
+  
  
    .call-button:hover, .content__price:hover {
      border-radius: 6%;
