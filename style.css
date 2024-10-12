@@ -39,7 +39,7 @@ background-image: url(images/active_header_menu.svg);
   justify-content: center;
   justify-items: center;
   align-items: center;
-  grid-template-rows: 14px repeat(7, 45px) 225px 76px;
+  grid-template-rows: 14px repeat(7, 45px) 25% 8%;
   top: 62px;
   position: absolute;
   width: 100%;
@@ -50,7 +50,7 @@ background-image: url(images/active_header_menu.svg);
   transition: 0.5s ease-in-out;
   
  }
- .burger-menu__item0 {
+ .exitbutton-position {
   position: absolute;
   left: 14px;
   top: 4px;
@@ -74,9 +74,7 @@ align-self: end;
   }
  
 
-.burger-menu__item9 {
-  padding-bottom: 42px;
-} 
+
 
 .menu__side-menu {
 width: 100%;
@@ -234,7 +232,7 @@ width: 100%;
 /* SIDE MENU LAPTOP */
 
   .burger-menu {
-    grid-template-rows: 0px repeat(7, 45px) 396px 94.7px;
+    grid-template-rows: 0px repeat(7, 45px) 25%  8%;
     top: 97px;
     left:0px;
     width: 360px;
@@ -242,7 +240,7 @@ width: 100%;
   
   }
   /* SIDE MENU параметры сайдменю для лэптопа */
-  .burger-menu__item0 {
+  .exitbutton-position {
     position: absolute;
     left: 321px;
     top: 0;
@@ -264,8 +262,7 @@ width: 100%;
     width: 20.87px;
     height: 18.19px;
    }
-
-
+   
     /* SIDE MENU LAPTOP */
 
 
