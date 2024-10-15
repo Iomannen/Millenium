@@ -39,7 +39,7 @@ background-image: url(images/active_header_menu.svg);
   justify-content: center;
   justify-items: center;
   align-items: center;
-  grid-template-rows: 14px repeat(7, 45px) 25% 8%;
+  grid-template-rows: 14px repeat(7, 45px) 38% 10%;
   top: 62px;
   position: absolute;
   width: 100%;
@@ -232,11 +232,11 @@ width: 100%;
 /* SIDE MENU LAPTOP */
 
   .burger-menu {
-    grid-template-rows: 0px repeat(7, 45px) 25%  8%;
+    grid-template-rows: 0px repeat(7, 45px) 46%  8%;
     top: 97px;
     left:0px;
     width: 360px;
-    padding-top: 52px;
+    padding-top: 80px;
   
   }
   /* SIDE MENU параметры сайдменю для лэптопа */
