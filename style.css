@@ -232,7 +232,7 @@ width: 100%;
 /* SIDE MENU LAPTOP */
 
   .burger-menu {
-    grid-template-rows: 0px repeat(7, 45px) 46%  8%;
+    grid-template-rows: 0px repeat(7, 45px) 38%  8%;
     top: 97px;
     left:0px;
     width: 360px;
