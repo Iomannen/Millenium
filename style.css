@@ -39,7 +39,7 @@ background-image: url(images/active_header_menu.svg);
   justify-content: center;
   justify-items: center;
   align-items: center;
-  grid-template-rows: 14px repeat(7, 45px) 38% 10%;
+  grid-template-rows: 14px repeat(7, 45px) 30% 10%;
   top: 62px;
   position: absolute;
   width: 100%;
@@ -47,8 +47,9 @@ background-image: url(images/active_header_menu.svg);
   background-color: white;
   text-align: start;
   height: 100%;
+ 
   transition: 0.5s ease-in-out;
-  
+
  }
  .exitbutton-position {
   position: absolute;
@@ -68,12 +69,12 @@ color: rgb(107, 90, 249);
 .bottom-align {
 align-self: end;
 }
+
 .text-align{
   text-align: center;
   width: 161px;
   }
  
-
 
 
 .menu__side-menu {
@@ -227,16 +228,16 @@ width: 100%;
      /* Новые парметры элементов в шапке (сайд меню с теми же размерам) */
  
  
- 
+     @media(min-height: 300px) {
 
 /* SIDE MENU LAPTOP */
 
   .burger-menu {
-    grid-template-rows: 0px repeat(7, 45px) 38%  8%;
+    grid-template-rows: 0px repeat(7, minmax(30px, 5%)) 10% 10%;
     top: 97px;
     left:0px;
     width: 360px;
-    padding-top: 80px;
+    padding-top: 50px;
   
   }
   /* SIDE MENU параметры сайдменю для лэптопа */
@@ -264,8 +265,87 @@ width: 100%;
    }
    
     /* SIDE MENU LAPTOP */
+  }
 
+  @media(min-height: 500px) {
 
+    /* SIDE MENU LAPTOP */
+    
+      .burger-menu {
+        grid-template-rows: 0px repeat(7, minmax(30px, 5%)) 20% 10%;
+        top: 97px;
+        left:0px;
+        width: 360px;
+        padding-top: 50px;
+      
+      }
+      /* SIDE MENU параметры сайдменю для лэптопа */
+      .exitbutton-position {
+        position: absolute;
+        left: 321px;
+        top: 0;
+        padding-top: 19.28px;
+       }
+       /* SIDE MENU позиционирование крестика */
+       .sidemenu-contentbackground {
+        position: absolute;
+        display: block;
+        background-color: rgba(163, 161, 161, 0.85);
+        left: 0px;
+        top: 97px;
+        width: 100%;
+        height: 100%;
+        z-index: 5;
+       }
+       /* SIDE MENU блок затемняющий экран */
+       .exit-button {
+        width: 20.87px;
+        height: 18.19px;
+       }
+       
+        /* SIDE MENU LAPTOP */
+      }
+
+      @media(min-height: 650px) {
+
+        /* SIDE MENU LAPTOP */
+        
+          .burger-menu {
+            grid-template-rows: 0px repeat(7, minmax(30px, 5%)) 30% 7%;
+            top: 97px;
+            left:0px;
+            width: 360px;
+            padding-top: 50px;
+          
+          }
+          /* SIDE MENU параметры сайдменю для лэптопа */
+          .exitbutton-position {
+            position: absolute;
+            left: 321px;
+            top: 0;
+            padding-top: 19.28px;
+           }
+           /* SIDE MENU позиционирование крестика */
+           .sidemenu-contentbackground {
+            position: absolute;
+            display: block;
+            background-color: rgba(163, 161, 161, 0.85);
+            left: 0px;
+            top: 97px;
+            width: 100%;
+            height: 100%;
+            z-index: 5;
+           }
+           /* SIDE MENU блок затемняющий экран */
+           .exit-button {
+            width: 20.87px;
+            height: 18.19px;
+           }
+           
+            /* SIDE MENU LAPTOP */
+          }
+    
+  
  .content {
    display: grid;
    grid-template-rows: 50px 75px 70px 97px;
@@ -298,7 +378,7 @@ width: 100%;
  }
  /* Позиция картинотьки лэптоп */
  }
- 
+
  /* Промежуточное разрешение экрана лэптоп-десктоп !!!
  Я не знаю можно ли было трогать значение grid-template-rows, что бы увеличить вертикальные отступы между блоками
  но я не стал, если что потом переделаю что бы более гармночино все выглядело   */
