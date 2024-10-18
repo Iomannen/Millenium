@@ -23,18 +23,38 @@
 a {
   text-decoration: none;
 }
- .burger-menu {
-  display: none;
- }
+.burger-menu {
+visibility: hidden;
+transform: translateX(-650px);
+transition: 0.5s ease-in-out;
+display: grid;
+justify-content: center;
+justify-items: center;
+align-items: center;
+grid-template-rows: 14px repeat(7, 45px) 30% 10%;
+top: 62px;
+position: absolute;
+width: 100%;
+z-index: 10;
+background-color: white;
+text-align: start;
+height: 100%;
+}
+.sidemenu-contentbackground {
+display: none;
+}
 
 /* SIDE MENU !!! выключаем */
 
-.menu__side-menu:hover .menu__sidemenu-button  {
-
+.menu__sidemenu-button--active  {
 background-image: url(images/active_header_menu.svg);
+width: 41px;
+height: 20px;
 }
 
-.burger-menu {
+.burgermenu-open {
+  visibility: visible;
+  transform: translateX(0px);
   display: grid;
   justify-content: center;
   justify-items: center;
@@ -122,7 +142,11 @@ width: 100%;
      width: 41px;
      height: 20px;
    }
-   
+   .menu__sidemenu-button {
+     background-image: url(images/3_lined_menu.svg);
+     width: 41px;
+     height: 20px;
+   }
    /* Параметры кнопки и меню */
    .menu {
      
@@ -232,7 +256,7 @@ width: 100%;
 
 /* SIDE MENU LAPTOP */
 
-  .burger-menu {
+  .burgermenu-open {
     grid-template-rows: 0px repeat(7, minmax(30px, 5%)) 10% 10%;
     top: 97px;
     left:0px;
@@ -248,7 +272,7 @@ width: 100%;
     padding-top: 19.28px;
    }
    /* SIDE MENU позиционирование крестика */
-   .sidemenu-contentbackground {
+   .contentbackground {
     position: absolute;
     display: block;
     background-color: rgba(163, 161, 161, 0.85);
@@ -271,7 +295,7 @@ width: 100%;
 
     /* SIDE MENU LAPTOP */
     
-      .burger-menu {
+      .burgermenu-open {
         grid-template-rows: 0px repeat(7, minmax(30px, 5%)) 20% 10%;
         top: 97px;
         left:0px;
@@ -287,7 +311,8 @@ width: 100%;
         padding-top: 19.28px;
        }
        /* SIDE MENU позиционирование крестика */
-       .sidemenu-contentbackground {
+       
+       .contentbackground {
         position: absolute;
         display: block;
         background-color: rgba(163, 161, 161, 0.85);
@@ -310,7 +335,7 @@ width: 100%;
 
         /* SIDE MENU LAPTOP */
         
-          .burger-menu {
+          .burgermenu-open {
             grid-template-rows: 0px repeat(7, minmax(30px, 5%)) 30% 7%;
             top: 97px;
             left:0px;
@@ -326,7 +351,7 @@ width: 100%;
             padding-top: 19.28px;
            }
            /* SIDE MENU позиционирование крестика */
-           .sidemenu-contentbackground {
+           .contentbackground {
             position: absolute;
             display: block;
             background-color: rgba(163, 161, 161, 0.85);
@@ -408,7 +433,7 @@ width: 100%;
  @media(min-width: 1280px) {
 
 
-  .burger-menu {
+  .burgermenu-close {
     display: none;
   }
   /* Burger menu zaglushka off */
