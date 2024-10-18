@@ -41,7 +41,8 @@ text-align: start;
 height: 100%;
 }
 .sidemenu-contentbackground {
-display: none;
+opacity: 0;
+transition: 1s;
 }
 
 /* SIDE MENU !!! выключаем */
@@ -279,15 +280,15 @@ width: 100%;
    }
    /* SIDE MENU позиционирование крестика */
    .contentbackground {
+    opacity: 1;
+    transition: 1s;
     position: absolute;
-    display: block;
     background-color: rgba(163, 161, 161, 0.85);
-    left: 0px;
-    top: 97px;
+    left: 111110px;
+    top: 97111px;
     width: 100%;
     height: 100%;
     z-index: 5;
-    
    }
    /* SIDE MENU блок затемняющий экран */
    .exit-button {
@@ -381,7 +382,8 @@ width: 100%;
            /* SIDE MENU позиционирование крестика */
            .contentbackground {
             position: absolute;
-            display: block;
+            opacity: 1;
+            transition: 1s;
             background-color: rgba(163, 161, 161, 0.85);
             left: 0px;
             top: 97px;
@@ -466,7 +468,7 @@ width: 100%;
   }
   /* Burger menu zaglushka off */
   .sidemenu-contentbackground {
-    display: none;
+    opacity: 0;
   }
 /* Burger menu desktop off */
 
@@ -582,4 +584,5 @@ width: 100%;
      }
  
   }
+
 
