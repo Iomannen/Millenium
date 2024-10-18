@@ -24,8 +24,8 @@ a {
   text-decoration: none;
 }
 .burger-menu {
-visibility: hidden;
-transform: translateX(-650px);
+opacity: 0;
+transform: translateX(-250px);
 transition: 0.5s ease-in-out;
 display: grid;
 justify-content: center;
@@ -50,10 +50,13 @@ display: none;
 background-image: url(images/active_header_menu.svg);
 width: 41px;
 height: 20px;
+transform: rotate(360deg);
+transition: 0.6s;
+
 }
 
 .burgermenu-open {
-  visibility: visible;
+  opacity: 1;
   transform: translateX(0px);
   display: grid;
   justify-content: center;
@@ -141,11 +144,13 @@ width: 100%;
      background-image: url(images/3_lined_menu.svg);
      width: 41px;
      height: 20px;
+     transition: 0.7s;
    }
    .menu__sidemenu-button {
      background-image: url(images/3_lined_menu.svg);
      width: 41px;
      height: 20px;
+     transition: 0.7s;
    }
    /* Параметры кнопки и меню */
    .menu {
@@ -257,6 +262,7 @@ width: 100%;
 /* SIDE MENU LAPTOP */
 
   .burgermenu-open {
+   
     grid-template-rows: 0px repeat(7, minmax(30px, 5%)) 10% 10%;
     top: 97px;
     left:0px;
@@ -281,6 +287,7 @@ width: 100%;
     width: 100%;
     height: 100%;
     z-index: 5;
+    
    }
    /* SIDE MENU блок затемняющий экран */
    .exit-button {
@@ -295,7 +302,28 @@ width: 100%;
 
     /* SIDE MENU LAPTOP */
     
+ 
+  .burger-menu {
+  opacity: 0;
+  transform: translateX(-1050px);
+  transition: 0.5s ease-in-out;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-rows: 14px repeat(7, 45px) 30% 10%;
+  top: 62px;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  background-color: white;
+  text-align: start;
+  height: 100%;
+  }
+    
       .burgermenu-open {
+        transform: translateX(0px);
+        opacity: 1;
         grid-template-rows: 0px repeat(7, minmax(30px, 5%)) 20% 10%;
         top: 97px;
         left:0px;
@@ -554,3 +582,4 @@ width: 100%;
      }
  
   }
+
