@@ -44,6 +44,7 @@ margin-right: auto;
 
  /* Тут  мы выравниваем по центру карточки и задаем отступ сверху от 1.2 макета */
  .cards-hidden {
+    overflow-y:hidden;
     transition: 0.5s;
     height: 530px;
     display: flex;
