@@ -30,7 +30,9 @@ button  {
    display: none;
  }
 
-
+ .card-redline {
+padding-top: 9px;
+ }
 
 
 
@@ -67,7 +69,7 @@ button  {
    }
     /* Тут  настраиваем сетку состоящую из карточек */
    .card-list__card {
-      width: 373px;
+      width: 364px;
       box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
       border-radius: 10px;
       overflow-x: visible;
@@ -97,7 +99,7 @@ button  {
    .card-content {
       font-size: 12px;
       font-weight: 400;
-      padding-top: 20px;
+      padding-top: 9px;
   
    }
    .cards__button {
@@ -191,7 +193,7 @@ margin-right: auto;
  .card-content {
     font-size: 12px;
     font-weight: 400;
-    padding-top: 20px;
+    padding-top: 9px;
 
  }
  .cards__button {
