@@ -584,5 +584,9 @@ width: 100%;
      }
  
   }
+  .hidden {
+    overflow: hidden !important;
+  }
+  /* Фиксация при открытии меню */
 
 
