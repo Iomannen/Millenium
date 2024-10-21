@@ -89,7 +89,7 @@ padding-top: 9px;
        flex-wrap: wrap;
        row-gap: 54px;
        column-gap: 20px;
-       padding: 0 10px;
+       padding: 0 20px;
        padding-bottom: 30px;
        justify-content: space-between;
     }
@@ -190,7 +190,7 @@ display: none;
      flex-wrap: wrap;
      row-gap: 54px;
      column-gap: 20px;
-     padding: 0 20px;
+     padding: 0 10px;
      padding-bottom: 30px;
      justify-content: space-between;
   }
@@ -253,7 +253,7 @@ display: none;
      flex-wrap: wrap;
      row-gap: 54px;
      column-gap: 20px;
-     padding: 0 20px;
+     padding: 0 10px;
      transition: 0.7s;
 }
 }
