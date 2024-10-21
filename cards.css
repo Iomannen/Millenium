@@ -35,6 +35,13 @@ button  {
    padding-top: 15px;
    padding-left: 10px;
    padding-right: 10px;
+    /* ГОООООООООООЛ ? */
+
+   box-sizing: border-box;
+width: 100%;
+overflow: hidden;
+
+ /* ГОООООООООООЛ ? */
  }
   /* ОТСУТПЫ СВАЙПЕРА ЧТО БЫ ТЕНЬ ОТОБРАЖАЛАСЬ КОРРЕКТНО */
   .swiper__header {
@@ -46,6 +53,8 @@ padding-bottom: 20px;
 
   }
 .card-list__card {
+      margin-left: auto;
+      margin-right: auto;
    height: 200px;
 }
 
@@ -340,4 +349,16 @@ margin-bottom: 20px;
    padding: 0 20px;
    transition: 1s;
 }
+}
+.swiper-slide-active {
+margin-left: auto;
+}
+.swiper-wrapper {
+   display: flex;
+margin-left: auto;
+}
+.card-list__card {
+
+margin-left: auto;
+margin-right: auto;
 }
