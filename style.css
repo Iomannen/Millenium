@@ -461,7 +461,9 @@ width: 100%;
  
  /* Позиция десктоп */
  @media(min-width: 1280px) {
-
+     .burgermenu-open {
+    display: none;
+     }
 
   .burgermenu-close {
     display: none;
