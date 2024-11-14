@@ -1,0 +1,222 @@
+
+* {
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
+}
+button  {
+ padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+.menu-style {
+   font-size: 14px;
+   font-weight: 700;
+   color: rgb(42, 35, 103);
+   }
+   .bottom-menustyle {
+   font-size: 18px;
+   font-weight: 700;
+   color: rgb(107, 90, 249);
+   }
+/* CВЕРХУ СТАРЫЕ СТИЛИ СНИЗУ КАРТОЧКИ */
+.swiper-section .swiper {
+   width: 360px;
+   height: 260px;
+   z-index: 0;
+ }
+ .swiper-slide-active {
+   width: 360px !important;
+ }
+ .swiper .swiper-initialized .swiper-horizontal .swiper-backface-hidden {
+   width: 360px !important;
+ }
+ /* ОКНО СВАЙПЕРА */
+ .swiper-slide {
+    /* ГОООООООООООЛ ? */
+   box-sizing: border-box;
+   padding-top: 10px;
+width: 100%;
+overflow: hidden;
+ /* ГОООООООООООЛ ? */
+ }
+  /* ОТСУТПЫ СВАЙПЕРА ЧТО БЫ ТЕНЬ ОТОБРАЖАЛАСЬ КОРРЕКТНО */
+  .swiper__header {
+font-size: 18px;
+padding-left: 10px;
+text-align: center;
+padding-bottom: 20px;
+  }
+.card-redline {
+padding-top: 9px;
+}
+.cards__header {
+   font-size: 24px;
+   padding-bottom: 15px;
+   margin-right: auto;
+   margin-left: auto;
+   padding-left: 10px;
+   width: 768px
+    }
+    /* ЗАГОЛОВОК КАРТОЧЕК */
+    .cards {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       padding-bottom: 50px;
+    }
+   
+    /* Тут  мы выравниваем по центру карточки и задаем отступ сверху от 1.2 макета */
+    .cards-hidden {
+      overflow-y: hidden;
+       transition: 0.7s;
+       height: 710px;
+       display: flex;
+       width: 800px;
+       flex-wrap: wrap;
+       row-gap: 54px;
+       column-gap: 20px;
+       padding: 0 20px;
+       padding-bottom: 30px;
+       justify-content: space-between;
+    }
+     /* Тут  настраиваем сетку состоящую из карточек */
+    .card-list__card {
+      margin-left: auto;
+      margin-right: auto;
+      height: 200px;
+       width: 340px;
+       box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+       border-radius: 10px;
+       overflow-x: visible;
+    }
+    /* Тени карточкам и закругление */
+    .card {
+       display: flex;
+       flex-direction: column;
+       padding-left: 15px;
+       padding-bottom: 5%;
+       padding-right: 14px;
+    }
+      /* Делаем отступы внутри карточек  */
+    .card-number {
+       font-size: 64px;
+       font-weight: 700;
+       color: rgb(255, 255, 255);
+       text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+       padding-top: 2px;
+    }
+    /* Номер карточек  */
+    .card-header {
+       font-size: 14px;
+       font-weight: 700;
+    }
+    /* Параметры названия карточек */
+    .card-content {
+       font-size: 12px;
+       font-weight: 400;
+       padding-top: 9px;
+    }
+    .cards__button {
+   background-image: url(images/arrow_button.svg);
+   width: 18px;
+   height: 10.63px;
+   transform: rotate(180deg);
+   transition: 0.35s;
+   margin-bottom: 20px;
+    }
+    .cards__button-active {
+       background-image: url(images/arrow_button.svg);
+   width: 18px;
+   height: 10.63px;
+   transition: 0.35s;
+   margin-bottom: 20px;
+    }
+   .cards-list {
+       justify-content: space-between;
+       overflow-y:hidden;
+       height: 216px;
+       display: flex;
+       width: 800px;
+       flex-wrap: wrap;
+       row-gap: 54px;
+       column-gap: 20px;
+       padding: 20px 20px;
+       transition: 0.7s;
+  }
+  .cards {
+   display: none;
+  }
+@media(min-width: 768px) {
+.swiper-section {
+display: none;
+   }
+  .cards {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+  }
+  /* Тут  мы выравниваем по центру карточки и задаем отступ сверху от 1.2 макета */
+  .cards-hidden {
+     width: 750px;
+     padding: 20px 10px;
+     padding-bottom: 30px;
+  }
+   /* Тут  настраиваем сетку состоящую из карточек */
+  .card-list__card {
+     width: 364px;
+  }
+  /* Тени карточкам и закругление */
+  .cards-list {
+     width: 750px;
+     padding: 20px 10px;
+     transition: 0.7s;
+}
+}
+@media(min-width: 1280px) {
+
+.cards__header {
+ display: flex;
+ font-size: 36px;
+width: 1200px;
+padding-left: 50px;
+ padding-bottom: 20px;
+}
+.cards {
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+/* Тут  мы выравниваем по центру карточки и задаем отступ сверху от 1.2 макета */
+.cards-hidden {
+  overflow-y: hidden;
+   transition: 0.5s;
+   height: 450px;
+   display: flex;
+   width: 1159px;
+   flex-wrap: wrap;
+   row-gap: 54px;
+   column-gap: 20px;
+   padding: 20px 20px;
+   padding-bottom: 30px;
+}
+ /* Тут  настраиваем сетку состоящую из карточек */
+.card-list__card {
+   width: 373px;
+}
+/* Тени карточкам и закругление */
+.cards__button {
+margin-bottom: 30px;
+}
+.cards-list {
+   justify-content: start;
+   height: 210px;
+   width: 1159px;
+   padding: 20px 20px;
+   transition: 1s;
+}
+}

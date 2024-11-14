@@ -1,0 +1,186 @@
+.hidden {
+    overflow: hidden !important;
+  }
+  /* Фиксация при открытии меню */
+
+  .consultation-hidden {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0; top: 0; right: 0; bottom: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.consultation-window {
+    display: none;
+}
+
+.document-background {
+    position: absolute;
+    display: block;
+    background-color: hsla(0,0%,1%,0.2);
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    min-width: 374px;
+    height: 110%;
+    z-index: 15;
+}
+
+.consultation-window__background {
+    width: 340px;
+    height: 514px;
+    position: absolute;
+    top: 20%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    z-index: 15;
+
+}
+
+.consultation-exitbutton {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+.consultation-window__header {
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 25px;
+}
+
+.input-name {
+    display: flex;
+    align-items: center;
+    height: 33px;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(126, 126, 126);
+    padding-top: 20px;
+}
+
+.input-name:nth-child(3) {
+    padding-top: 30px;
+}
+
+.consultation-inputs {
+    width: 310px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.consultation-input {
+    width: 310px;
+    height: 25px;
+    font-size: 12px;
+    font-weight: 700;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: rgb(152, 149, 180);
+    color: rgb(152, 149, 180);
+}
+
+::placeholder {
+    color: rgb(152, 149, 180);
+}
+
+.submit-wrapper {
+    display: flex;
+    align-items: end;
+    height: 90px;
+}
+
+.submit {
+    width: 310px;
+    height: 60px;
+    background-color: rgb(107, 90, 249);
+    color: white;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.confidentialpolitics-text {
+    display: flex;
+    align-items: end;
+    font-size: 10px;
+    font-weight: 500;
+    width: 316px;
+    height: 49px;
+    color: rgb(152, 149, 180);
+}
+
+.locker-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    border-radius: 50%;
+    border: white solid 3px;
+    background-color: rgb(166, 166, 166);
+    width: 21.76px;
+    height: 21.76px;
+}
+
+.locker {
+    width: 9.79px;
+    height: 10.88px;
+}
+
+.confidentialpolitics-wrapper {
+    display: flex;
+    align-items: end;
+    height: 115px;
+}
+
+.confidentialpolitics-button {
+    background-image: linear-gradient(to right, rgb(107, 90, 249), rgb(174, 164, 254));
+    border-radius: 10px;
+    height: 93.83px;
+    width: 213.52px;
+    position: relative;
+}
+
+@media(min-width: 768px) {
+    .consultation-window__background {
+        width: 532px;
+        height: 498px;
+    }
+
+    .consultation-window__header {
+        font-size: 20px;
+    }
+
+    .consultation-inputs {
+        padding-right: 60px;
+    }
+
+    .consultation-input {
+        width: 374px;
+    }
+
+    .confidentialpolitics-text {
+        width: 411px;
+        padding-left: 30px;
+    }
+
+    .submit {
+        width: 374px;
+    }
+}
+
+@media(min-width: 1280px) {
+    .consultation-window__background {
+        width: 766px;
+    }
+}

@@ -1,0 +1,252 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsla(246,49%,27%,1);
+    height: 642px;
+    padding-top: 25px;
+}
+
+.footerline__wrapper {
+    overflow: hidden;
+}
+
+.footer__text {
+    font-size: 18px;
+    font-weight: 700;
+    height: 33px;
+    color: white;
+}
+
+.footer__referencewrapper {
+    height: 45px;
+}
+
+.footer-refrence {
+    color: hsla(246,92%,67%,1);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.footer__button-wrapper {
+    height: 90px;
+    display: flex;
+    align-items: end;
+}
+
+.footer__callbutton {
+    border-radius: 5px;
+    width: 275px;
+    height: 60px;
+    background-color: hsla(246,92%,67%,1);
+    font-size: 12px;
+    font-weight: 800;
+    color: white;
+}
+
+.messengers-wrapper {
+    align-items: end;
+    height: 75px;
+    display: flex;
+    gap: 20px;
+}
+
+.footer__address {
+    display: flex;
+    align-items: end;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    padding: 0 25px;
+    height: 78px;
+}
+
+.telphone-wrapper {
+    display: flex;
+    align-items: end;
+    height: 62px;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    width: 134px;
+    text-decoration: none;
+}
+
+.whitecolor {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: end;
+    height: 92px;
+}
+
+.copyright {
+    display: flex;
+    align-items: end;
+    width: 221px;
+    height: 50px;
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+}
+
+.footer__confidentialitypolitic {
+    display: flex;
+    align-items: end;
+    height: 45px;
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+}
+
+.underline {
+    color: white;
+    text-decoration: underline;
+}
+
+@media(min-width: 768px) {
+    footer {
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: 300px 300px;
+        grid-template-rows: 50px 50px 10px 65px 75px 100px 60px 40px;
+        grid-template-areas:
+            "text button"
+            "mail button"
+            "line line"
+            "address icons"
+            "tel icons"
+            "logo logo"
+            "copyright copyright"
+            "confidentiality confidentiality";
+        height: 506px;
+        padding-top: 45px;
+        column-gap: 40px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .footer__text {
+        font-size: 24px;
+        grid-area: text;
+    }
+
+    .footer-reference {
+        grid-area: mail;
+        font-size: 29px;
+    }
+
+    .footer-refrence {
+        font-size: 29px;
+    }
+
+    .footer__button-wrapper {
+        height: 60px;
+        grid-area: button;
+        display: flex;
+        align-self: flex-end;
+    }
+
+    .footer__callbutton {
+        width: 341px;
+        font-size: 14px;
+    }
+
+    .footer-line {
+        width: 100%;
+    }
+
+    .footerline__wrapper {
+        grid-area: line;
+    }
+
+    .footer__address {
+        padding: 0;
+        font-size: 14px;
+        font-weight: 700;
+        color: white;
+        text-align: left;
+        align-self: flex-end;
+        height: auto;
+        grid-area: address;
+    }
+
+    .messengers-wrapper {
+        justify-self: end;
+        height: 110px;
+    }
+
+    .telphone-wrapper {
+        grid-area: tel;
+    }
+
+    .footer-logo {
+        justify-self: center;
+        grid-area: logo;
+        height: auto;
+        align-self: flex-end;
+    }
+
+    .copyright {
+        grid-area: copyright;
+        width: auto;
+        justify-self: center;
+    }
+
+    footer .footer__confidentialitypolitic {
+        grid-area: confidentiality;
+        width: auto;
+        justify-self: center;
+        font-size: 12px;
+        height: auto;
+    }
+}
+
+@media(min-width: 1280px) {
+    footer {
+        grid-template-rows: 80px 80px 50px 65px 75px 60px 60px 50px;
+        padding-left: 140px;
+        padding-right: 140px;
+        height: 569px;
+        padding-top: 75px;
+    }
+
+    .footer__text {
+        font-size: 36px;
+        align-self: flex-start;
+    }
+
+    .footer-refrence {
+        align-self: flex-start;
+        font-size: 48px;
+    }
+
+    .footer__button-wrapper {
+        align-items: center;
+        height: 70px;
+    }
+
+    .footer-line {
+        width: 100%;
+    }
+
+    .footer__address {
+        font-size: 18px;
+    }
+
+    .telphone-wrapper {
+        width: 178px;
+    }
+
+    .whitecolor {
+        font-size: 18px;
+    }
+
+    .footer-logo__image {
+        width: 161px;
+    }
+}

@@ -1,0 +1,64 @@
+.office {
+    display: flex;
+    justify-content: center;
+    width:100%;
+    min-width: 370px;
+    top: -350px;
+    position: absolute;
+    overflow: hidden;
+}
+.office-section {
+    position: relative;
+}
+.office-image {
+    z-index: 1000;
+    width: 612px;
+    height: 251px;
+}
+@media(min-width: 612px) {
+    .office {
+        top: -450px;
+    }
+    .office-image {
+        width: 769px;
+        height: 316px;
+    }
+}
+@media(min-width: 768px) {
+    .office {
+        top: -650px;
+    }
+    .office-image {
+        width: 1120px;
+        height: 459px;
+    }
+}
+@media(min-width: 1120px) {
+    .office-image {
+        width: 1280px;
+        height: 525px;
+    }
+}
+@media(min-width: 1280px) {
+    .office {
+        top: -750px;
+    }
+    .office-image {
+        width: 1440px;
+        height: 590px;
+    }
+}
+@media(min-width: 1440px) {
+    .office {
+        top: -950px;
+    }
+    .office-image {
+        width: 1920px;
+        height: 787px;
+    }
+}
+@media(min-width: 1920px) {
+    .office-image {
+        width: 100%;
+    }
+}
