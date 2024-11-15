@@ -1,7 +1,7 @@
-let mql = window.matchMedia('(max-width: 767px)');
+let windowCheck = window.matchMedia('(max-width: 767px)');
 
 window.addEventListener('DOMContentLoaded', () => {
-  if (mql.matches) {
+  if (windowCheck.matches) {
 let swiper = new Swiper('.swiper', {
     loop: true,
   
