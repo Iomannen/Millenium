@@ -1,7 +1,7 @@
-let qwl = window.matchMedia('(max-width: 1279px)');
+let windowCheck = window.matchMedia('(max-width: 1279px)');
 let sertificateSwiper = document.querySelector('.swiper2');
 window.addEventListener('DOMContentLoaded', () => {
-  if (qwl.matches) {
+  if (windowCheck.matches) {
 sertificateSwiper.classList.toggle('swiper');
 let swiper = new Swiper('.swiper', {
     loop: true,
