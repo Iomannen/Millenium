@@ -314,6 +314,7 @@ input[type=text], input[type=tel] {
         display: block;
         top: 480px;
         right: 290px;
+        width: 58px;
     }
     .donut-laptop {
         display: none;
